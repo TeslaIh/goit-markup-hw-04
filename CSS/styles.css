@@ -342,7 +342,7 @@ img {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link{
+.social-link {
   display: flex;
   padding: 12px;
 }
@@ -357,11 +357,12 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-/*
-.social-link:hover, .social-icon {
+
+.social-link:hover
+.social-icon {
   fill: var(--secondary-text-color);
 }
-*/
+
 .descr-clients {
   padding: 94px 0;
 }
@@ -564,12 +565,18 @@ img {
 }
 
 .projects-link {
+  display: block;
   height: 100%;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
 }
-
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .projects-title-color {
   margin-bottom: 4px;
   font-size: 18px;
